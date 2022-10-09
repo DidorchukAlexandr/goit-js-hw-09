@@ -30,7 +30,7 @@ function onFormSubmit(evt) {
     return;
 }
 
-  for (position = 1; position <= elmAmount; position += 1) {
+  for (let position = 1; position <= elmAmount; position += 1) {
    createPromise(position, elmDelay)
   .then(({ position, delay }) => {
     Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
